@@ -1,5 +1,5 @@
 import React from 'react'
-//import ListaDeAlunos from './components/ListaDeAluno/ListaDeAlunos';
+import ListaDeAlunos from './components/ListaDeAluno/ListaDeAlunos';
 import Carro from './components/img/veraneio.webp'
 //import Primeiro from './components/Primeiro/Primeiro'
 //import Segundo from './components/Segundo/Segundo'
@@ -23,6 +23,13 @@ export default function App() {
              infoImgProps={infoImg}
              legProps={leg}
             /> 
+
+            <h2>Nome do aluno:(aluno)</h2>  
+                <ListaDeAlunos 
+                    nomeProps={aluno}
+                    turmaProps={turma}
+                    profsProps={profs}
+                />
         </div>
     )
 }
