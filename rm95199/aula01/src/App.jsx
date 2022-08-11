@@ -1,20 +1,21 @@
 import React from 'react'
-import ListaDeAluno from './components/Lista_de_alunos/ListaDeAluno'
-import Primeiro from './components/Primeiro/Primeiro'
-import Segundo from './components/Segundo/Segundo'
+import Carro from './components/Carro/Carros'
+import carroImg from './img/veraneio.webp'
 
 export default function App() {
-    const aluno = "Emerson Silva"
-    const turma = "1TDSR"
-    const profs = ["a", "b", "c", "d", "e", "f"]
+    
+    const infoCarro ="Carro de família"
+    const infoImg = 200
+    const leg ="Esse carro marcou época"
+    const listaDeCarros = ["Monza-SLE", "Escort-XR3", "Variant-II", 'Kadett', 'Gol-GTI']
     return (
         <>
-            <h2>Nome do Aluno:{aluno}</h2>
-            <ListaDeAluno 
-            nomeProps={aluno}
-            turmaProps={turma}
-            profsProps={profs}
-            />
+          <Carro
+            pathImgProps={carroImg}
+            infoCarroProps={infoCarro}
+            infoImgProps={infoImg}
+            legProps={leg}
+          />  
         </>
     )
 }
