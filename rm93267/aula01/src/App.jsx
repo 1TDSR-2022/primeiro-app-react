@@ -1,4 +1,5 @@
 import React from 'react'
+import ListaDeAlunos from './components/ListaDeAlunos/ListaDeAlunos'
 import Primeiro from './components/Primeiro/Primeiro'
 import Segundo from './components/Segundo/Segundo'
 
@@ -12,7 +13,11 @@ import Segundo from './components/Segundo/Segundo'
     return (
         <>
           <h2>Nome do aluno: {aluno}</h2>
-          
+          <ListaDeAlunos
+          nomeProps={aluno}
+          turmaProps={turma}
+          profsProps={profs}
+          />
         </>
     )
 }
