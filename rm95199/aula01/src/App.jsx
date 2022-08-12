@@ -1,6 +1,6 @@
 import React from 'react'
 import Carro from './components/Carro/Carros'
-import carroImg from './img/veraneio.webp'
+import carroImg from './components/img/veraneio.webp'
 
 export default function App() {
     
